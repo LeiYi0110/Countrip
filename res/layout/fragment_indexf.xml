@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.pi9Lin.pulltorefresh.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.pi9Lin.bins.MyListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </com.pi9Lin.bins.MyListView>
+        
+        <include layout="@layout/load_more" />
+    </com.pi9Lin.pulltorefresh.pullableview.PullToRefreshLayout>
+
+    <include
+        android:id="@+id/ab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_index_top" />
+	
+    <RelativeLayout
+        android:id="@+id/gotop" 
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/go_top"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="41dp"
+        ></RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 景点详细页面 -->
+
+    <com.pi9Lin.bins.VerticalScrollView
+        android:id="@+id/mysv"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 图片介绍 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="234dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/you_vPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/save_it"
+                    android:layout_width="31dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/detail_lovef" />
+
+                <TextView
+                    android:id="@+id/you_img_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="190dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="59dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="175dp"
+                    android:background="#565a5c"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥"
+                            android:textColor="@color/white"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价格"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <!-- 景点介绍 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="19dp"
+                    android:paddingTop="21dp" >
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#565a5c"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center" >
+
+                        <RatingBar
+                            android:id="@+id/ratingbar"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="4.5"
+                            android:stepSize="0.5" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="距离我的位置:"
+                            android:textColor="#565a5c"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#565a5c"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/show_tel"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="电话:"
+                            android:textColor="#565a5c"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/telephone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#565a5c"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地址:"
+                            android:textColor="#565a5c"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/detail_addr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#565a5c"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_tel" 
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/tele"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="28dp"
+                    />
+                
+            </FrameLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_divider" >
+            </include>
+
+            <!-- 高德静态地图 -->
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/map_static"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp" >
+            </ImageView>
+
+            <!-- 景点介绍 -->
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                layout="@layout/layout_youdetail_introduce" />
+            
+            <!-- 评论 -->
+            <include
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                layout="@layout/layout_youdetail_comment" />
+
+            <!-- 附近 -->
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                layout="@layout/layout_youdetail_round" />
+
+            <!-- 底部 -->
+<!--             <include
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="38dp"
+                layout="@layout/layout_youdetail_foot" /> -->
+        </LinearLayout>
+    </com.pi9Lin.bins.VerticalScrollView>
+
+</RelativeLayout>

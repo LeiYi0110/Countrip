@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 住乡屋布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.pi9Lin.pulltorefresh.pullableview.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include layout="@layout/refresh_head" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.pi9Lin.bins.MyListView
+                android:id="@+id/list_sleep"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none" >
+            </com.pi9Lin.bins.MyListView>
+
+            <include layout="@layout/load_more" />
+        </com.pi9Lin.pulltorefresh.pullableview.PullToRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@null" >
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/sleep_seach_bar"
+                android:layout_width="333dp"
+                android:layout_height="41dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/sleep_seach" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

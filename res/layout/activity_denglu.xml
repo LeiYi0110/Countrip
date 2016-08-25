@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/denglu_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- 输入框 -->
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="117dp"
+            android:orientation="vertical" >
+
+            <!-- 手机号 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="15sp"
+                        android:text="手机号"
+                        android:textColor="@color/white"
+                        />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/txt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入手机号"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="315dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/press" />
+            <!-- 密码 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="15sp"
+                        android:text="密码"
+                        android:textColor="@color/white"
+                        />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/txt_passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:layout_marginLeft="8dp"
+                    android:editable="true"
+                    android:gravity="center_vertical"
+                    android:hint="您的登录密码"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 忘记密码 -->
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp" >
+
+            <TextView
+                android:id="@+id/forget_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="忘记密码"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <!-- 登录按钮 -->
+
+        <TextView
+            android:id="@+id/denglu"
+            android:layout_width="330dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/lvse_bg"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white" />
+        <!-- 注册按钮 -->
+
+        <TextView
+            android:id="@+id/zhuce"
+            android:layout_width="330dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/chengse_bg"
+            android:gravity="center"
+            android:text="马上注册"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <!-- 第三方登录 -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp" >
+
+        <View
+            android:layout_width="132dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="第3方账号登录"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="132dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white" />
+    </RelativeLayout>
+    <!-- 小企鹅 -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:id="@+id/qq_denglu"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_qq" />
+
+        <ImageView
+            android:id="@+id/qq_haha"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/qq_denglu" />
+    </RelativeLayout>
+
+</LinearLayout>

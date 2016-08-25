@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/denglu_bg" >
+
+    <!-- 个人信息 -->
+
+    <LinearLayout
+        android:id="@+id/www1"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/findpswback_bg"
+        android:orientation="vertical" >
+
+        <!-- 昵称 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:hint="昵称"
+                android:textColorHint="#a5000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/input_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:hint="请输入您的昵称"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 提交申请按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/eee1"
+        android:layout_width="330dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/www1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/chengse_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启美妙之旅"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

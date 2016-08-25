@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/comment_bg"
+        android:paddingBottom="14dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="14dp" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="亲，旅游项目丰富吗？餐饮如何呢？性价比怎么样？喜欢请给好评哦..."
+            android:inputType="textMultiLine"
+            android:textColor="#aaaaaa"
+            android:textColorHint="#aaaaaa"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

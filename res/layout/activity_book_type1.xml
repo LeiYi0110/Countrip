@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f0f0f0"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/time_of_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="8月1日入住"
+            android:textColor="#8c8a8a"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/time_of_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/time_of_in"
+            android:text="/8月3日离开"
+            android:textColor="#8c8a8a"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="修改"
+            android:textColor="#ff6a6f"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

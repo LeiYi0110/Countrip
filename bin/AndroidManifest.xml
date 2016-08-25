@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pi9Lin.countrip"
+    android:versionCode="3"
+    android:versionName="2.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 定位添加的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- SDK2.1新增获取用户位置信息 -->
+    <!-- 第三方分享 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.pi9Lin.activity.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 定位添加的用户 Key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="51105c088a0fecc87b87fc6d27200d29" />
+
+        <activity android:name="com.pi9Lin.gallary.ImageFile" >
+        </activity>
+        <activity
+            android:name="com.pi9Lin.activity.IndexActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.ListViewActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.ListActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.commentfrag.CommentActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.gallary.Gallary" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.ImagePagerActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.start.PrepareActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.testpic.PublishedActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.start.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pi9Lin.start.GuideActivity" >
+        </activity>
+        <activity
+            android:name="com.pi9Lin.gallary.AlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.YouDetailActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.DetailActivity" >
+        </activity>
+        <activity
+            android:name="com.pi9Lin.denglu.Password"
+            android:theme="@style/ActivityTheme_Light" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.YouBookActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.gallary.GalleryActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.YouCommentActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.activity.ShowCommentActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.denglu.FindPwdBack" >
+        </activity>
+        <activity
+            android:name="com.pi9Lin.denglu.Register"
+            android:theme="@style/ActivityTheme_Light" >
+        </activity>
+        <activity
+            android:name="com.pi9Lin.denglu.DengLuActivity"
+            android:theme="@style/ActivityTheme_Light" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.ImageGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.pi9Lin.denglu.UserInfo"
+            android:theme="@style/ActivityTheme_Light" >
+        </activity>
+        <activity android:name="com.pi9Lin.minefrag.SaveActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.minefrag.NickNameActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.minefrag.MobileActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.minefrag.PasswordActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.search.CitySelectActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.search.LocateSearchActivity" >
+        </activity>
+        <activity
+            android:name="com.pi9Lin.search.SearchActivity"
+            android:theme="@style/ActivityTheme_Light" >
+        </activity>
+        <activity android:name="com.pi9Lin.search.AreaSelectActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.navi.NaviStartActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.navi.NaviRouteActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.navi.NaviCustomActivity" >
+        </activity>
+        <activity android:name="com.pi9Lin.navi.NaviSettingActivity" >
+        </activity>
+        <!-- 分享 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1104658473" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="Adapter"
+                android:value="cn.sharesdk.demo.MyAdapter" />
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.pi9Lin.countrip.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 调用新浪原生SDK，需要注册的activity -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 调用新浪原生SDK，需要注册的回调activity -->
+        <activity
+            android:name="cn.sharesdk.sina.weibo.SinaActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- qq第三方登录 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104658473" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/f0f0f0" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/app_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/logo"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="#565a5c"
+                android:textSize="11.5sp" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="#919293"
+                android:textSize="11.5sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/haha"
+        android:layout_width="match_parent"
+        android:layout_height="225dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPage"
+            android:layout_width="fill_parent"
+            android:layout_height="225dp" />
+
+        <TextView
+            android:id="@+id/vPage_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="185dp"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/to_love"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/love_img"
+                android:layout_width="17dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/lovef" />
+
+            <TextView
+                android:id="@+id/love_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/love_img"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/huise"
+                android:text="0+"
+                android:textSize="10.5sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/to_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/to_love"
+            android:layout_marginLeft="38dp" >
+
+            <ImageView
+                android:id="@+id/comment_img"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/comment" />
+
+            <TextView
+                android:id="@+id/comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/comment_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:text="0+"
+                android:textColor="@color/huise"
+                android:textSize="10.5sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp" >
+
+            <ImageView
+                android:id="@+id/distance_img"
+                android:layout_width="13dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/distance" />
+
+            <TextView
+                android:id="@+id/distance_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/distance_img"
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"
+                android:text="0km"
+                android:textColor="@color/huise"
+                android:textSize="10.5sp" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/gege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:text="同步到"
+            android:textColor="#565a5c"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/xlwb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/gege"
+            android:src="@drawable/xlwb" />
+
+        <ImageView
+            android:id="@+id/wx"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/xlwb"
+            android:src="@drawable/wx" />
+
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/wx"
+            android:src="@drawable/qq" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/f0f0f0"
+    android:orientation="vertical">
+	<include 
+	    layout="@layout/item_mine_imgface"
+	    android:layout_width="fill_parent"
+	    android:layout_height="165dp"
+	    />
+	<include 
+	    android:layout_width="342dp"
+	    android:layout_height="1dp"
+	    android:layout_gravity="center_horizontal"
+	    layout="@layout/layout_divider"
+	    />
+	<ListView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:id="@+id/list_mine"
+	    android:divider="@null"
+	    ></ListView>
+	
+	<RelativeLayout
+	    android:id="@+id/logout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="20dp"
+	    >
+	    
+	    <TextView
+            android:layout_width="301dp"
+            android:layout_height="50dp"
+            android:background="@drawable/lvse_bg"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="@color/white" />
+	</RelativeLayout>
+	
+</LinearLayout>

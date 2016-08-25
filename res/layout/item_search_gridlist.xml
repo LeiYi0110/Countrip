@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="71dp"
+        android:layout_height="36dp"
+        android:background="@drawable/cityname_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市名"
+            android:textColor="#828586"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

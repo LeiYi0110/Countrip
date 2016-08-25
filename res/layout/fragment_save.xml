@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#565a5c"
+            android:text="我的收藏"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+    
+    <com.pi9Lin.pulltorefresh.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.pi9Lin.bins.MyListView
+            android:id="@+id/list_save"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </com.pi9Lin.bins.MyListView>
+
+        <include layout="@layout/load_more" />
+    </com.pi9Lin.pulltorefresh.pullableview.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    android:gravity="center_horizontal" >
+    
+    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点介绍"
+            android:textSize="13sp"
+            android:textColor="#565a5c"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            />
+	<TextView
+	    android:id="@+id/desc" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:lineSpacingMultiplier="1.0"
+	    android:layout_marginTop="30dp"
+	    android:paddingLeft="15dp"
+   		android:paddingRight="15dp"
+		android:lines="6"
+	    android:text="暂无"
+	    android:textSize="9sp"
+	    android:textColor="#86898d"
+	    android:ellipsize="end"
+	    />
+   
+	<RelativeLayout
+	    android:id="@+id/seeAll"
+        android:layout_width="101dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/kuang"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全部"
+            android:textColor="#ff8400"
+            android:textSize="15sp" />
+    </RelativeLayout>
+	<include
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="16dp"
+	    layout="@layout/layout_divider" >
+	</include>
+	
+	<ImageView
+	    android:id="@+id/second" 
+	    android:layout_width="match_parent"
+	    android:layout_height="233dp"
+	    android:layout_marginTop="15dp"
+	    android:background="@drawable/empty_img"
+	    android:scaleType="centerCrop"
+	    ></ImageView>
+	
+</LinearLayout>

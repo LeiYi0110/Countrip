@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="100dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:text="附	  近"
+        android:textColor="#565a5c"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/round_you"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/you_img"
+                android:src="@drawable/fjc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@drawable/heise_touming" >
+
+                <TextView
+                    android:id="@+id/you_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="玩0"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/round_zhu"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/zhu_img"
+                android:src="@drawable/fjz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@drawable/heise_touming" >
+
+                <TextView
+                    android:id="@+id/zhu_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="住0"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/round_chi"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/chi_img"
+                android:src="@drawable/fjc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@drawable/heise_touming" >
+
+                <TextView
+                    android:id="@+id/chi_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="吃0"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/guoshu"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/guoshu_img"
+                android:src="@drawable/fjgs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@drawable/heise_touming" >
+
+                <TextView
+                    android:id="@+id/guoshu_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="果蔬0"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <!-- 我是菜农 我要入驻 -->
+    <!-- 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是菜农"
+            android:textColor="#868d91"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="我要入驻"
+            android:textColor="#ff8400"
+            android:textSize="15sp" />
+    </LinearLayout>
+    -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        layout="@layout/layout_divider" >
+    </include>
+
+</LinearLayout>

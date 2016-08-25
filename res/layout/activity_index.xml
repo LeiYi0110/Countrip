@@ -1,0 +1,32 @@
+
+<!-- 主页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/index_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/index_bottom" >
+
+        <!-- 内容区域 -->
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 底部 -->
+
+    <include
+        android:id="@+id/index_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_index_foot"
+        android:background="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_tiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="19dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/kkk"
+            android:layout_width="117dp"
+            android:layout_height="84dp"
+             />
+
+        <TextView
+            android:id="@+id/lll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/kkk"
+            android:layout_marginLeft="34dp"
+            android:text="简介"
+            android:textColor="#595d5f"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+        
+        <ImageView 
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@drawable/save_arrawright"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="41dp"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+
+    <include
+        android:layout_width="342dp"
+        android:layout_height="1dp"
+        layout="@layout/layout_divider" />
+
+</LinearLayout>

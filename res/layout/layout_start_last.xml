@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5c5c5c" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的\n下一站\n是\n那里？"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        />
+
+	<include
+	    android:id="@+id/start_foot"
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    layout="@layout/layout_index_foot" />
+	
+	<RelativeLayout
+	    android:id="@+id/to_start" 
+	    android:layout_width="98dp"
+	    android:layout_height="98dp"
+	    android:layout_above="@+id/start_foot"
+	    android:layout_centerHorizontal="true"
+	    android:background="#C0C0C0"
+	    android:gravity="center"
+	    >
+	    <ImageView 
+	        android:layout_width="42dp"
+	        android:layout_height="23dp"
+	        android:src="@drawable/arrow"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

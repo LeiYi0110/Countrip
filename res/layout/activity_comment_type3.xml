@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <GridView 
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="21dp"
+        android:horizontalSpacing="3dp"        
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+    
+<!--     <RelativeLayout
+        android:id="@+id/upload_img"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/upload_bg" >
+
+        <ImageView
+            android:id="@+id/take_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:src="@drawable/take_photo" />
+
+        <TextView
+            android:id="@+id/sctp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/take_photo"
+            android:text="上传图片"
+            android:textColor="#aaaaaa"
+            android:textSize="12sp" />
+    </RelativeLayout> -->
+
+</LinearLayout>
